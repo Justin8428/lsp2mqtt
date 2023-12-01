@@ -1,0 +1,9 @@
+ - light:
+     schema: json
+     name: whatever_you_want
+     state_topic: "lsp2mqtt/LIGHTID"
+     command_topic: "lsp2mqtt/LIGHTID/set"
+     color_mode: true
+     brightness: true
+     supported_color_modes: ["color_temp"]
+     optimistic: true

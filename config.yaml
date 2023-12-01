@@ -1,0 +1,12 @@
+mqtt_broker:
+  host: 192.168.0.1
+  port: 1883
+  username: xxxx
+  password: xxxx
+
+light_ids:
+  - light1
+  - light2
+
+reversed_colour_ids:
+  - light2
