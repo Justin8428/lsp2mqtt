@@ -19,6 +19,23 @@ If on debian, may need to install `python3-paho-mqtt` and `python3-yaml`, or cre
 If you are planning to run this as a systemctl service, you can provide a custom location for your `config.yaml` as an argument.
 e.g. `python3 ~/lsp2mqtt/main.py "/path/to/config.yaml"`
 
+## Extra instructions for running as a systemd service
+ - Create the service file e.g. `nano /etc/systemd/system/lsp2mqtt.service`
+ - Insert the following into the file (change the file path depending on what your username is)
+
+```
+[Unit]
+Description=lsp2mqtt.service
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/debian/lsp2mqtt/main.py "/home/debian/lsp2mqtt/config.yaml"
+[Install]
+WantedBy=multi-user.target
+```
+ - `systemctl start lsp2mqtt` followed by `systemctl enable lsp2mqtt`
+
 ## Extra instructions for auto-start if your bluetooth dongle is connected over usbip
 1. Create a systemctl service to start lsp2mqtt on boot. Set it to start after `multi-user.target`
 2. Create a shell file to connect to the usbip. e.g.
