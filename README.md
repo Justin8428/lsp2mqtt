@@ -8,6 +8,8 @@ lampify to mqtt
  - Clone this repo and edit `config.yaml` to match your configuration
  - Run `main.py`
 
+If on debian, may need to install `python3-paho-mqtt`, i.e. the paho-mqtt package for python
+
 ## `config.yaml` setup
  - Under `mqtt_broker:`, put the IP address and credentials for your MQTT broker
  - Under `light_ids:`, put the light IDs that you have paired with via `lampify setup` and that you have added to HA.
