@@ -8,7 +8,7 @@ lampify to mqtt
  - Clone this repo and edit `config.yaml` to match your configuration
  - Run `main.py`
 
-If on debian, may need to install `python3-paho-mqtt`, i.e. the paho-mqtt package for python
+If on debian, may need to install `python3-paho-mqtt` and `python3-yaml`, or create a venv
 
 ## `config.yaml` setup
  - Under `mqtt_broker:`, put the IP address and credentials for your MQTT broker
