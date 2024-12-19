@@ -1,7 +1,7 @@
 # lsp2mqtt
 lampify to mqtt
 
-## This project is deprecreated
+## This project is deprecated
 Use https://github.com/aronsky/esphome-components instead
 
 ## Quick Setup Guide
