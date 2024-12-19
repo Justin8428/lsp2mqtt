@@ -1,6 +1,9 @@
 # lsp2mqtt
 lampify to mqtt
 
+## This project is deprecreated
+Use https://github.com/aronsky/esphome-components instead
+
 ## Quick Setup Guide
  - Install `lampify`, the custom_temp branch. i.e. https://github.com/Justin8428/lampify/tree/custom_temp
  - Setup your lights using `lampify`. **Remember the ID you use for each light, you will need to provide these IDs to lsp2mqtt**
